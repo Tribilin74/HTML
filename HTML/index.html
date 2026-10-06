@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="./Static/css/estilo.css">
+    <title>Curso 26239 - ROSSATO</title>
+</head>
+<body>
+
+    <!-- Navegación y Encabezado -->
+    <header>
+        <!-- Banner Principal -->
+        <section id="banner">
+            <div>
+                <h1>Tus mejores diseños y mucho más</h1>
+            </div>
+        </section>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <section class="cajaArtista">
+            
+            <div class="artista">
+                <h2>Diseño e Impresión 3D</h2>
+            </div>
+
+            <article class="imageIndex1">
+                <img src="./Static/imagenes/impresion3d.jpg" alt="Diseño e Impresión 3D"> 
+                <p>
+                    Nuestros diseños crearán momentos hoy que serán los recuerdos del mañana. 
+                    Con el paso del tiempo uno comienza a olvidar algunos detalles, y ahí es 
+                    donde entramos nosotros: creando recuerdos que perduren desde la nube.
+                </p>
+            </article>
+
+            <article class="mensajeIndex">
+                <h3>Creando Recuerdos</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/IIxBQeZoz60" 
+                            title="¿Qué Objetos Increíbles Puedes Crear con una Impresora 3D?" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </article>
+
+            <article class="imagenIndex2">
+                <img src="./Static/imagenes/impresion.jpg" alt="Servicio de Impresión"> 
+                <p>
+                    Desde un casamiento, el cumpleaños de tu hijo o el de tu mascota, un día de pesca 
+                    con amigos o lo que quieras recordar para siempre, nosotros lo hacemos posible.
+                </p>
+                <p>
+                    Contamos con la última tecnología digital para diseñar y varias impresoras 3D 
+                    para hacer de tu día elegido un recuerdo único.
+                </p>
+            </article>
+
+            <section class="contacto-form-container">
+                <h3>Envíanos tu consulta</h3>
+                <form action="https://formspree.io/f/xaewrjyo" method="POST" class="form-contacto">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <a class="pie" href="#">Términos y Condiciones</a>
+        <a class="pie" href="#">Preguntas Frecuentes</a>
+        <a class="pie" href="#">Ayuda</a>
+    </footer>
+
+</body>
+</html>

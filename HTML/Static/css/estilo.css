@@ -1,0 +1,43 @@
+/* Previene el colapso de elementos flotantes */
+main {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+/* Espaciado del contenedor del formulario */
+.contacto-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    clear: both; /* Evita superposición si hay floats arriba */
+}
+
+/* Estilo del formulario */
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Ajuste responsive del contenedor de video */
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* Garantiza espacio limpio antes del Footer */
+footer {
+    clear: both;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
