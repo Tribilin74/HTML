@@ -1,43 +1,125 @@
-/* Previene el colapso de elementos flotantes */
-main {
-    display: block;
-    overflow: hidden;
-    margin-bottom: 40px;
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #222;
 }
 
-/* Espaciado del contenedor del formulario */
-.contacto-form-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    clear: both; /* Evita superposición si hay floats arriba */
+.icono-titulo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
-/* Estilo del formulario */
-.form-contacto {
-    display: flex;
+/* Header, navegación y footer */
+.encabezado {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.encabezado a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.encabezado a:hover,
+.encabezado a:focus {
+  text-decoration: underline;
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.pie-pagina {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Background en sección */
+.seccion-hero {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+}
+
+.banner-img {
+  max-height: 280px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.galeria-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Productos con Flexbox */
+.productos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto-card {
+  flex: 1 1 240px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Reseñas con Grid */
+.resenas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.resena-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9fafb;
+}
+
+/* Carrito */
+.item-carrito {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+}
+
+/* Contacto + Media Queries */
+#contacto {
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .resenas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-lista {
     flex-direction: column;
-    gap: 15px;
-}
+    gap: 8px !important;
+    margin-top: 10px !important;
+  }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-/* Ajuste responsive del contenedor de video */
-.video-container iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-}
-
-/* Garantiza espacio limpio antes del Footer */
-footer {
-    clear: both;
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
+  #contacto {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
