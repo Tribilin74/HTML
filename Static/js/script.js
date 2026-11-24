@@ -1,6 +1,6 @@
 console.log('script cargado');
 
-const API_URL = './static/catalogo/productos.json';
+const API_URL = './Static/Catalogo/productos.json';
 const STORAGE_KEY = 'carrito_tienda_basica';
 
 let productosCargados = [];
