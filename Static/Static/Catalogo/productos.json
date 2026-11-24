@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Taza Calavera",
+    "price": 30000,
+    "description": "Taza con diseño de calavera en relieve impresa en 3D con interior apto para bebidas. Ideal para darle un toque original a tu escritorio o regalar.",
+    "category": "bazar y decoración",
+    "image": "Static/Catalogo/Calavera.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Clickers",
+    "price": 5000,
+    "description": "Llavero antiestrés articulado con mecanismo táctil de clic mecánico. Compacto, resistente y perfecto para llevar en el bolsillo o mochila.",
+    "category": "accesorios y juguetes",
+    "image": "Static/Catalogo/clicker.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Gatito Flex",
+    "price": 10000,
+    "description": "Figura articulada de gatito impresa en una sola pieza sin ensamblajes. Flexible, liviana y súper divertida para decorar repisas o escritorios.",
+    "category": "figuras articuladas",
+    "image": "Static/Catalogo/gatito_flex.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Organizador de Cables",
+    "price": 5000,
+    "description": "Soporte práctico para ordenar y sujetar cables de cargadores, auriculares o USB evitando enredos sobre la mesa de trabajo.",
+    "category": "organización",
+    "image": "Static/Catalogo/organizador.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Osito Polar Navideño",
+    "price": 10000,
+    "description": "Adorno temático de oso polar con detalles festivos, ideal para decorar el árbol de Navidad, centros de mesa o regalar en las fiestas.",
+    "category": "decoración navideña",
+    "image": "Static/Catalogo/oso_polar.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Farol Callejero",
+    "price": 20000,
+    "description": "Miniatura decorativa de farol estilo clásico con espacio para luz LED. Perfecto para ambientar rincones, maquetas o mesas de noche.",
+    "category": "iluminación y deco",
+    "image": "Static/Catalogo/farol.jpg"
+  }
+]

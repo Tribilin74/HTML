@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tienda online de impresión y productos con catálogo desde API, carrito persistente y formulario de contacto." />
+  <meta name="keywords" content="impresion 3d, tienda online, productos, carrito de compras, contacto" />
+  <title>Impresión y Tienda Online de Diseño en 3D</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="Static/css/estilo.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+      <div class="d-flex align-items-center gap-2">
+        <img src="Static/imagenes/camera_ico.png" alt="Ícono principal del sitio" class="icono-titulo" />
+        <h1 class="h4 m-0">Impresión y Tienda Online</h1>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-lista d-flex list-unstyled m-0 gap-3">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#carrito">Carrito (<span id="contador-carrito">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion-hero py-5">
+      <div class="container text-center">
+        <h2>Servicios e Impresión</h2>
+        <p class="lead">Tienda de diseño e impresión 3d.</p>
+
+        <div class="mb-4">
+          <img
+            src="Static/imagenes/banner.jpg"
+            alt="Banner principal de impresión y tienda"
+            class="img-fluid rounded banner-img"
+          />
+        </div>
+
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-5">
+            <img
+              src="Static/imagenes/impresion3d.jpg"
+              alt="Ejemplo de impresión 3D"
+              class="img-fluid rounded galeria-img"
+            />
+            <h3 class="h6 mt-2">Impresión 3D</h3>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="Static/imagenes/impresion.jpg"
+              alt="Ejemplo de trabajo de impresión"
+              class="img-fluid rounded galeria-img"
+            />
+            <h3 class="h6 mt-2">Trabajos de Impresión</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Productos (Flexbox + API REST) -->
+    <section id="productos" class="container py-5">
+      <h2>Catálogo de Productos</h2>
+      <div id="mensaje-estado" class="mb-3" aria-live="polite"></div>
+      <div id="lista-productos" class="productos-flex"></div>
+    </section>
+
+    <!-- Sección Carrito -->
+    <section id="carrito" class="container py-4">
+      <h2>Carrito de Compras</h2>
+      <div id="items-carrito" class="mb-3"></div>
+      <p class="fw-bold">Total: $<span id="total-carrito">0.00</span></p>
+    </section>
+
+    <!-- Sección Reseñas (Grid) -->
+    <section id="resenas" class="container py-5">
+      <h2>Reseñas de Clientes</h2>
+      <div class="resenas-grid">
+        <article class="resena-card">
+          <h3>Lucía</h3>
+          <p>"Buena atención, los productos de excelente calidad."</p>
+        </article>
+        <article class="resena-card">
+          <h3>Martín</h3>
+          <p>"Los productos son geniales y los entregan rápido."</p>
+        </article>
+        <article class="resena-card">
+          <h3>Sofía</h3>
+          <p>"Compré un Osito Navideño y me encantó."</p>
+        </article>
+      </div>
+    </section>
+<section id="contacto" class="contacto-form-container container py-5">
+  <h3>Envíanos tu consulta</h3>
+  <form id="form-contacto" action="https://formspree.io/f/xaewrjyo" method="POST" class="form-contacto" novalidate>
+    <div class="form-group mb-3">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit btn btn-primary">Enviar mensaje</button>
+    <div id="mensaje-form" class="mt-3" aria-live="polite"></div>
+  </form>
+</section>
+   </main>
+
+  <footer class="pie-pagina py-4 text-center">
+    <div class="container">
+      <p class="m-0">Impresión y Tienda Online - Proyecto E-commerce</p>
+    </div>
+  </footer>
+
+  <script src="Static/js/script.js"></script>
+</body>
+</html>
